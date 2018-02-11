@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-    public title: string;
-
-    constructor() {
-        this.title = 'app';
-    }
-}
+export class AppComponent {}
