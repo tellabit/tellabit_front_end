@@ -26,4 +26,4 @@ script:
     - npm run ng build -- --prod --base-href "/tellabit_front_end/"
 after_success:
     #- echo "musketeer.com" > dist/CNAME
-    - ngh --repo=https://GH_TOKEN@github.com/Actual-Musketeer/tellabit_front_end.git --name="Travis CI" --email=dolan_miu@hotmail.com
+    - ngh --repo=https://GH_TOKEN@github.com/Actual-Musketeer/tellabit_front_end.git --name="Travis CI" --email=dolan_miu@hotmail.com --no-silent
