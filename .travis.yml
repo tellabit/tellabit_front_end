@@ -22,8 +22,8 @@ script:
     - npm run spell
     - npm run style
     - npm run ng test -- --watch=false
-    #- npm run ng build -- --prod
-    - npm run ng build -- --prod --base-href "/tellabit_front_end/"
+    - npm run ng build -- --prod
+    #- npm run ng build -- --prod --base-href "/tellabit_front_end/"
 after_success:
-    #- echo "tellabit.org" > dist/CNAME
+    - echo "tellabit.org" > dist/CNAME
     - ngh --repo=https://GH_TOKEN@github.com/tellabit/tellabit_front_end.git --name="Travis CI" --email=dolan_miu@hotmail.com --no-silent
