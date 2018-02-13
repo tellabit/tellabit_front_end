@@ -1,0 +1,17 @@
+$bg-color: rgb(40, 43, 56);
+$text-color: #fff;
+
+.bg {
+    background-color: $bg-color;
+    color: $text-color;
+    height: 400px;
+    padding: 20px 0;
+}
+
+hr {
+    border-color: $text-color;
+}
+
+.information {
+    padding-top: 80px;
+}
