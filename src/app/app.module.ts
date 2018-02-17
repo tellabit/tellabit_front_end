@@ -12,7 +12,14 @@ import { TeamModule } from './team/team.module';
 
 @NgModule({
     declarations: [AppComponent, NavBarComponent, FooterComponent],
-    imports: [BrowserModule, AppRoutingModule, Ng2PageScrollModule, HomeModule, TeamModule, FaqModule],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        Ng2PageScrollModule,
+        HomeModule,
+        TeamModule,
+        FaqModule,
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })
