@@ -1,7 +1,8 @@
-$bg-color: rgb(40, 43, 56);
+$bg-color: #4e4e50;
 $text-color: #fff;
 
 .bg {
+    background: $bg-color url('/assets/footer.jpg') repeat-x center center;
     background-color: $bg-color;
     color: $text-color;
     height: 400px;
