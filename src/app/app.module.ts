@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +15,7 @@ import { TeamModule } from './team/team.module';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        Ng2PageScrollModule,
+        NgxPageScrollModule,
         HomeModule,
         TeamModule,
         FaqModule,
