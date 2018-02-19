@@ -1,2 +1,12 @@
 // You can add global styles to this file, and also import other style files
 @import '~bootstrap/scss/bootstrap';
+
+$text-color: #fff;
+
+.hero {
+    background-position: bottom center;
+    background-size: cover;
+    color: $text-color;
+    height: 500px;
+    padding-top: 170px;
+}
