@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg" [ngClass]="{'unscrolled-nav': !scrolled, 'navbar-dark': scrolled, 'bg-dark': scrolled}">
     <div class="container">
 
         <a class="navbar-brand" routerLink="/">Tellabit</a>

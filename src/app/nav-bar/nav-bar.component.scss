@@ -1,0 +1,30 @@
+$nav-hover-color: rgba(255, 255, 255, .5);
+$nav-shadow-color: rgba(0, 0, 0, .7);
+$nav-border-color: #2b99dd;
+$nav-text-color: #fff;
+
+nav {
+    transition: background-color .5s, height .5s, padding-top .5s;
+    transition-timing-function: ease-out;
+}
+
+div {
+    transition-timing-function: ease-out;
+}
+
+.unscrolled-nav {
+    background-color: transparent;
+    height: 100px;
+    padding-top: 30px;
+    text-shadow: 0 1px 3px $nav-shadow-color;
+
+    a {
+        color: $nav-text-color;
+        transition: color .5s;
+
+        &:hover {
+            color: $nav-hover-color;
+        }
+    }
+
+}
