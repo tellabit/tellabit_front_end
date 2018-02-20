@@ -26,5 +26,8 @@ div {
             color: $nav-hover-color;
         }
     }
+}
 
+.btn {
+    transition: background-color .5s;
 }
