@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { PageScrollConfig } from 'ngx-page-scroll';
 
 @Component({
@@ -7,7 +8,7 @@ import { PageScrollConfig } from 'ngx-page-scroll';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    constructor() {
+    constructor(router: Router) {
         PageScrollConfig.defaultScrollOffset = 50;
         PageScrollConfig.defaultEasingLogic = {
             ease: (t, b, c, d) => {
@@ -28,5 +29,11 @@ export class AppComponent {
             },
         };
         PageScrollConfig.defaultDuration = 500;
+
+        router.events.subscribe((ev) => {
+            if (ev instanceof NavigationEnd) {
+                window.scrollTo(0, 0);
+            }
+        });
     }
 }
