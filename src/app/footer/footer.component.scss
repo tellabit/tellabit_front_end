@@ -1,12 +1,17 @@
 $bg-color: #4e4e50;
 $text-color: #fff;
 
+:host {
+    display: block;
+    margin-top: 50px;
+}
+
 .bg {
     background: $bg-color url('/assets/footer.jpg') repeat-x center center;
     background-color: $bg-color;
     color: $text-color;
     height: 400px;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 hr {
