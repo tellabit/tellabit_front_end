@@ -1,6 +1,7 @@
 // You can add global styles to this file, and also import other style files
 @import '~bootstrap/scss/bootstrap';
-
+// sass-lint:disable no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 $text-color: #fff;
 
 .hero {
@@ -9,4 +10,18 @@ $text-color: #fff;
     color: $text-color;
     height: 500px;
     padding-top: 170px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
