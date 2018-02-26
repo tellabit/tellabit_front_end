@@ -1,4 +1,4 @@
-import { Component, Renderer } from '@angular/core';
+import { Component, Renderer, Renderer2 } from '@angular/core';
 
 @Component({
     selector: 'app-nav-bar',
@@ -8,8 +8,8 @@ import { Component, Renderer } from '@angular/core';
 export class NavBarComponent {
     public scrolled: boolean;
 
-    constructor(renderer: Renderer) {
-        renderer.listenGlobal('window', 'scroll', () => {
+    constructor(renderer: Renderer2) {
+        renderer.listen('window', 'scroll', () => {
             const scrollTop =
                 window.pageYOffset ||
                 document.documentElement.scrollTop ||
