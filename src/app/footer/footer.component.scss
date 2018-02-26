@@ -1,5 +1,7 @@
-$bg-color: #4e4e50;
+$bg-color: #0f1121;
 $text-color: #fff;
+$h2-color: #788c9a;
+$link-hover-color: #ea891f;
 
 :host {
     display: block;
@@ -7,10 +9,11 @@ $text-color: #fff;
 }
 
 .bg {
-    background: $bg-color url('/assets/footer.jpg') repeat-x center center;
+    // background: $bg-color url('/assets/footer.jpg') repeat-x center center;
+    background: $bg-color;
     background-color: $bg-color;
     color: $text-color;
-    height: 400px;
+    height: 500px;
     padding: 100px 0;
 }
 
@@ -20,4 +23,30 @@ hr {
 
 .information {
     padding-top: 80px;
+}
+
+h2 {
+    color: $h2-color;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 40px;
+}
+
+.copyright {
+    color: $h2-color;
+    font-size: .9rem;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+    }
 }

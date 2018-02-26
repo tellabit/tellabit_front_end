@@ -16,7 +16,6 @@ export class NavBarComponent {
                 document.body.scrollTop ||
                 0;
             this.scrolled = scrollTop > 60 ? true : false;
-            console.log(scrollTop);
         });
     }
 }
