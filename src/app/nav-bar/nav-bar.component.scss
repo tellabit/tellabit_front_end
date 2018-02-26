@@ -16,10 +16,11 @@ div {
     background-color: transparent;
     height: 100px;
     padding-top: 30px;
-    text-shadow: 0 1px 3px $nav-shadow-color;
 
-    a {
+    .nav-link,
+    .navbar-brand {
         color: $nav-text-color;
+        text-shadow: 0 1px 3px $nav-shadow-color;
         transition: color .5s;
 
         &:hover {
