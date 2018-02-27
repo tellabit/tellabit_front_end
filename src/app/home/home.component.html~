@@ -1,8 +1,8 @@
 <div class="jumbotron jumbotron-fluid hero">
     <div class="container">
         <h1 class="display-3">Tellabit</h1>
-        <p class="lead">A sharded block-chain, infintely scalable, provably secure.</p>
-        <p class="lead"><button class="btn btn-primary btn-lg" pageScroll href="#register">ICO Gateway</button></p>
+        <p class="lead">The digital currency that scales, and scales to large.</p>
+        <p class="lead"><button class="btn btn-primary btn-lg" pageScroll href="#register">Register Interest</button></p>
     </div>
 </div>
 
@@ -133,8 +133,43 @@
 <section>
     <div class="container">
         <h1>Recent developments</h1>
-        <p>New Website; Updated Whitepaper</p>
+        <p>Nope</p>
     </div>
 </section>
 
+<div class="container" id="register">
+    <h1>Register Interest</h1>
 
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control form-control-lg" placeholder="name@example.com">
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label>Which country you from fam?</label>
+            <select class="form-control form-control-lg">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>How many coins would you buy?</label>
+            <select multiple class="form-control form-control-lg">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Comment</label>
+            <textarea class="form-control form-control-lg" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+</div>
